@@ -72,7 +72,7 @@ MongoDB (Mongoose)
 ### Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/rohitkumar01603016/MBS.git
 cd mess-billing-system
 ```
 
