@@ -12,6 +12,7 @@ import { createServer } from "node:http";
 import './cron/monthlyBill.js'
 dotenv.config();
 
+
 // console.log(process.env.MONGOURI);
 mongoose.connect(process.env.MONGOURI).then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
@@ -27,7 +28,7 @@ export let io;
 
 io = new Server(server, {
   cors: {
-    origin: "https://mbs-nine.vercel.app",
+    origin: "https://mbs-woad.vercel.app/",
     methods: ["GET", "POST", "PUT"]
   }
 });
@@ -47,7 +48,7 @@ io.on("connection", (socket) => {
 
 
 app.use(cors({
-  origin: "https://mbs-nine.vercel.app", // ❗ no trailing slash
+  origin: "https://mbs-woad.vercel.app/", // ❗ no trailing slash
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
