@@ -28,7 +28,7 @@ export let io;
 
 io = new Server(server, {
   cors: {
-    origin: "https://mbs-woad.vercel.app/",
+    origin: ["https://mbs-woad.vercel.app"],
     methods: ["GET", "POST", "PUT"]
   }
 });
