@@ -11,7 +11,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("/api/admin/users", {
+    fetch(" https://mbs-uhbg.onrender.com/api/admin/users", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
