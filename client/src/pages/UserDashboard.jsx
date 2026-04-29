@@ -31,7 +31,7 @@ const UserDashboard = () => {
 
   useEffect(() => {
     
-    socket.current = io("https://mbs-obwq.onrender.com", {
+    socket.current = io("https://mbs-uhbg.onrender.com", {
       transports: ["websocket"],
     });
     socket.current.on("connect", () => {
@@ -47,7 +47,7 @@ const UserDashboard = () => {
   const fetchBills = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("/api/user/messbill", {
+      const res = await fetch("https://mbs-uhbg.onrender.com/api/user/messbill", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

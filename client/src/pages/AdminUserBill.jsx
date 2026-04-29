@@ -5,11 +5,12 @@ import { io } from "socket.io-client";
 
 
 //  ADDED (outside component)
-const socket = io("https://mbs-obwq.onrender.com", {
+const socket = io("https://mbs-uhbg.onrender.com", {
   transports: ["websocket"],   //  force websocket
   reconnection: true,
   reconnectionAttempts: Infinity,
-});
+}); 
+// https://mbs-uhbg.onrender.com
 
 const AdminUserBill = () => {
   const { rollno } = useParams();
@@ -64,7 +65,7 @@ const AdminUserBill = () => {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        `/api/admin/messbill/${rollno}?month=${month}`,
+        `https://mbs-uhbg.onrender.com/api/admin/messbill/${rollno}?month=${month}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -130,7 +131,7 @@ const AdminUserBill = () => {
 
       const token = localStorage.getItem("token");
 
-      const res = await fetch(`/api/admin/messbill/${rollno}`, {
+      const res = await fetch(`https://mbs-uhbg.onrender.com/api/admin/messbill/${rollno}`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}`, },
         body: JSON.stringify({ month, days }),

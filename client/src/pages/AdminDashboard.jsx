@@ -34,7 +34,7 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await fetch(`/api/auth/admin/delete/user/${userId}`, {
+      const response = await fetch(`https://mbs-uhbg.onrender.com/api/auth/admin/delete/user/${userId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

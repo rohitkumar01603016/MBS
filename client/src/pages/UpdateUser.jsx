@@ -22,7 +22,7 @@ function UpdateUser() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch("/api/user/messbill", {
+        const res = await fetch("https://mbs-uhbg.onrender.com/api/user/messbill", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -68,7 +68,7 @@ function UpdateUser() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("/api/auth/update", {
+      const res = await fetch("https://mbs-uhbg.onrender.com/api/auth/update", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -80,7 +80,7 @@ function UpdateUser() {
       const data = await res.json();
 
       if (data.success) {
-        toast.success("Profile updated successfully! 🎉", {
+        toast.success("Profile updated successfully! ", {
           position: "bottom-right",
           autoClose: 3000,
           hideProgressBar: false,
