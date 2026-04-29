@@ -57,7 +57,7 @@ app.use(express.json());
 
 // Define a route for the root URL ("/")
 app.get("/", (req, res) => {
-  res.send("I am SERVER...");  // Send a response to the client
+  res.send("I am SERVER...");  
 });
 // Start the server on port 3000
 app.use('/api', userRouter);
