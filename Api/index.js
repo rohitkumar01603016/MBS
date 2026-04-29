@@ -48,12 +48,11 @@ io.on("connection", (socket) => {
 
 
 app.use(cors({
-  origin: "https://mbs-woad.vercel.app/", // ❗ no trailing slash
+  origin: "https://mbs-woad.vercel.app", 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 app.use(express.json());
-
 
 
 // Define a route for the root URL ("/")
