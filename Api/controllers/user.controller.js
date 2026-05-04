@@ -2,7 +2,7 @@ import User from "../models/user.model.js";
 
 export const getAllUsersForAdmin = async (req, res) => {
   try {
-    // 1️⃣ Only fetch normal users (exclude admins)
+    // 1️ Only fetch normal users (exclude admins)
     const users = await User.find({ role: "user" })
       .select("name rollno");
       // console.log(users);

@@ -8,7 +8,6 @@ const Footer = () => {
           © {new Date().getFullYear()} Mess Billing. All rights reserved.
         </p>
         <p className="text-xs text-gray-400 mt-1">
-          {/* Developed with ❤️ by BidyanshuPrachi. */}
           Developed with Rohit.
         </p>
       </div>

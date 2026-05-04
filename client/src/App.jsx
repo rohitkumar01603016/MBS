@@ -17,22 +17,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/user/dashboard" element={<UserDashboard />} />
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
-      </Routes> */}
-      {/* Ye uper ke code basic method tha jaha pe navbar alway visible tha ------------ */}
-
-      {/* <ToastContainer
-        position="bottom-right"
-        autoClose={3000}
-        hideProgressBar={false}
-      /> */}
-        {/* Required for toast notifications to appear */}
       <ToastContainer
         position="bottom-right"
         autoClose={3000}

@@ -6,3 +6,10 @@ export const isAdmin = (req, res, next) => {
   }
   next();
 };
+
+
+
+// db.users.updateone(
+//          {nam: "rohit"},
+//          {$set: {role:admin}}
+// )
